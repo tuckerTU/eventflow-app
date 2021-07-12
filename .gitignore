@@ -41,14 +41,4 @@ yarn-debug.log*
 
 
 
-Guest
-has_many :events
-has_many :hosts, through: :events
 
-Host
-has_may :events 
-has_many :guests, through: :events
-
-Event
-belongs_to :guests
-belongs_to :hosts
