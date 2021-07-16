@@ -1,4 +1,4 @@
 class Event < ApplicationRecord
-    belongs_to :guests
-    belongs_to :hosts
+    belongs_to :host
+    has_many :guests
 end
