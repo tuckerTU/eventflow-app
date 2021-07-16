@@ -3,5 +3,5 @@ class User < ApplicationRecord
     has_many :events, through: :guests 
     has_many :events, through: :hosts
 
-    validates :user_name, uniqueness: true
+    validates :email, presence: true, uniqueness :true
 end
